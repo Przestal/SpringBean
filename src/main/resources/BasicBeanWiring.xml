@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
     <bean name="college" class="com.College">
         <constructor-arg value="IIT"/>
         <property name="establishedYear" value="1945"/>
@@ -19,9 +19,40 @@
                 <ref bean="Java"/>
             </set>
         </property>
+        <property name="studentContacts">
+            <map>
+                <entry key="23456" value-ref="Richard"/>
+                <entry key="67891" value-ref="Steve"/>
+            </map>
+        </property>
 
+        <property name="faculties">
+            <props>
+                <prop key="Robert">Computer sience</prop>
+                <prop key="Casper">Mechanical</prop>
+            </props>
+        </property>
+    </bean>
+    <bean name="Richard" class="com.Student">
+        <property name="name" value="Richard"/>
+        <property name="age" value="22"/>
+        <property name="department" value="Computers"/>
 
     </bean>
 
+    <bean name="Steve" class="com.Student">
+    <property name="name" value="Steve"/>
+    <property name="age" value="23"/>
+    <property name="department" value="Communications"/>
+    </bean>
+
+    <bean name="DBMS" class="com.Books">
+    <property name="bookTitle" value="Database Management Systems"/>
+    <property name="author" value="Peter"/>
+    </bean>
+    <bean name="Java" class="com.Books">
+    <property name="bookTitle" value="SCJP 5"/>
+    <property name="author" value="Kathey sierra"/>
+    </bean>
 
 </beans>

@@ -3,6 +3,7 @@ package com;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 
 
 public class College {
@@ -11,8 +12,9 @@ public class College {
     private String establishedYear;
 
     private List<Student> students;
-    private Map<String, Student>  studentContracts;
+    private Map<String, Student>  studentContacts;
     private Properties faculties;
+    private Set books;
 
     public College() {
     }
@@ -45,12 +47,12 @@ public class College {
         this.students = students;
     }
 
-    public Map<String, Student> getStudentContracts() {
-        return studentContracts;
+    public Map<String, Student> getStudentContacts() {
+        return studentContacts;
     }
 
     public void setStudentContracts(Map<String, Student> studentContracts) {
-        this.studentContracts = studentContracts;
+        this.studentContacts = studentContracts;
     }
 
     public Properties getFaculties() {
@@ -59,5 +61,19 @@ public class College {
 
     public void setFaculties(Properties faculties) {
         this.faculties = faculties;
+    }
+
+    public void setBooks(Set books) {
+        this.books = books;
+    }
+
+    public Set getBooks() {
+        return books;
+    }
+
+
+
+    public void setStudentContacts(Map<String, Student> studentContacts) {
+        this.studentContacts = studentContacts;
     }
 }
