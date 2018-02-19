@@ -1,10 +1,28 @@
 package com;
 
 public class Student {
-
     private String name;
     private String age;
     private String department;
+    private Book javaBook;
+    private String studentName;
+
+    public Book getJavaBook() {
+        return javaBook;
+    }
+
+
+    public void setJavaBook(Book javaBook) {
+        this.javaBook = javaBook;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
 
     public String getName() {
         return name;

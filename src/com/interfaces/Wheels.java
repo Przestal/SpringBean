@@ -1,6 +1,6 @@
 package com.interfaces;
 
-public interface Wheel {
+public interface Wheels {
 
     void rotate();
 }

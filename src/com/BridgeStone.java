@@ -1,11 +1,11 @@
 package com;
 
-import com.interfaces.Wheel;
+import com.interfaces.Wheels;
 
-public class BridgeStone implements Wheel {
+public class BridgeStone implements Wheels {
     @Override
     public void rotate() {
         System.out.println("BridgeStone" +
-                " is the Wheel here");
+                " is the Wheels here");
     }
 }

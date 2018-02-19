@@ -1,4 +1,4 @@
-package main.java;
+package domain.java;
 
 import com.Car;
 import org.springframework.context.ApplicationContext;
@@ -10,7 +10,7 @@ public class Traveller {
     public static void main(String[] args) {
 
         ApplicationContext ctx = new
-                ClassPathXmlApplicationContext("main/resources/Travel.xml");
+                ClassPathXmlApplicationContext("domain/resources/Travel.xml");
         Car car= (Car) ctx.getBean("car");
 
         car.move();

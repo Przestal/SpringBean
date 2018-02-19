@@ -15,6 +15,11 @@ public class College {
     private Map<String, Student>  studentContacts;
     private Properties faculties;
     private Set books;
+    private Student collegeStudent;
+
+    public void setCollegeStudent(Student collegeStudent) {
+        this.collegeStudent = collegeStudent;
+    }
 
     public College() {
     }
@@ -75,5 +80,9 @@ public class College {
 
     public void setStudentContacts(Map<String, Student> studentContacts) {
         this.studentContacts = studentContacts;
+    }
+
+    public Student getCollegeStudent() {
+        return collegeStudent;
     }
 }

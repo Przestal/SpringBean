@@ -15,7 +15,7 @@ public class BeanWiringDemo {
     public static void main(String[] args) {
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
-                "main/resources/BasicBeanWiring.xml");
+                "domain/resources/BasicBeanWiring.xml");
         // FIXME: 16.02.18 log4j logger
         Logger logger = Logger.getLogger(BeanWiringDemo.class);
         BasicConfigurator.configure();
