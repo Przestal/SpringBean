@@ -24,6 +24,10 @@ public class College {
     public College() {
     }
 
+    public College(Student collegeStudent) {
+        this.collegeStudent = collegeStudent;
+    }
+
     public College(String collegeName) {
         this.collegeName = collegeName;
     }

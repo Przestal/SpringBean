@@ -22,5 +22,11 @@
     <!--Auto wiring constructor-->
     <bean name="college" class="com.College" autowire="constructor"/>
 
+    <!-- ====================== -->
+    <!--Another wheel type bean-->
+    <bean name="wheel2" class="com.Wheel">
+        <property name="name" value="ToyWheel"/>
+    </bean>
+
 
 </beans>
